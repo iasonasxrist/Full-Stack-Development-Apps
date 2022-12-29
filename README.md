@@ -1,5 +1,5 @@
 # Full-Stack-Apps
-## 1) react-movie-app
+## 1) React-movie-app
 live-link : https://adorable-frangollo-e2e948.netlify.app
 
 ## 2) React-Native Food-App UI
