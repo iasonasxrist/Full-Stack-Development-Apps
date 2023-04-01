@@ -3,13 +3,15 @@ import Services from './components/Services'
 import Trusted from './components/Trusted'
 import HeroSection from './components/HeroSection'
 import Footer from './components/Footer'
+import FeaturedProduct from './components/FeaturedProduct'
+
 
 const Home = () => {
-    const name = "Jason Store";
 
     return (
         <>
-            <HeroSection myData={name} />
+            <HeroSection  />
+            <FeaturedProduct />
             <Services />
             <Trusted />
             <Footer />

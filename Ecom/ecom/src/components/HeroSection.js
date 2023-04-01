@@ -1,7 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import {Button} from '../styles/Button';
+import { Button } from '../styles/Button';
+
 const HeroSection = ({ name }) => {
 
   return <Wrapper>
@@ -9,8 +10,9 @@ const HeroSection = ({ name }) => {
       <div className='grid grid-two-column'>
         <div className='hero-section-data'>
           <p className='intro-data'>
-            Welcome to </p>
-          <h1>{name}</h1>
+            Welcome to <h1>Jason Ecommerce</h1> </p>
+          {/* <h1>{name}</h1> */}
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quas
             quisquam qui sunt esse, cupiditate dignissimos! Magnam vero
@@ -44,7 +46,7 @@ const Wrapper = styled.section`
   }
   .hero-section-data {
     p {
-      margin: 2rem 0;
+      margin: 2rem 0rem ;
     }
     h1 {
       text-transform: capitalize;

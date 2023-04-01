@@ -1,19 +1,20 @@
 import HeroSection from './components/HeroSection'
-import { useProductContext } from './context/productContext'
+import { AppContext, useProductContext } from "./context/productContext";
 
 const About = () => {
-  const {myName}  = useProductContext()
-
+  const {myName} = useProductContext();
+  console.log(myName)
 
   const data = {
-    name: "Jason LeetCode",
-  }
-
+    name: "Jason Ecommerce",
+  };
+  //TODO cannot provide neither data
+  //nor myName into HeroSection Component
 
   return (
     <>
       {myName}
-      <HeroSection myData={data} />{""}
+      <HeroSection myData={myName} />{" "}
     </>
 
   )
