@@ -10,7 +10,8 @@ const HeroSection = ({ name }) => {
       <div className='grid grid-two-column'>
         <div className='hero-section-data'>
           <p className='intro-data'>
-            Welcome to <h1>Jason Ecommerce</h1> </p>
+            Welcome to <h1>Jason Ecommerce</h1>
+          </p>
           {/* <h1>{name}</h1> */}
 
           <p>

@@ -42,15 +42,19 @@ const SimpleProduct = () => {
                         <p>{stars}</p>
                         <Star stars={stars} reviews={reviews} />
                         <p>{reviews} reviews</p>
-                        <p className='product-data-price'>
-                            EUR:
-                            <del>
-                                <FormatPrice price={price + 150000} />
-                            </del>
-                        </p>
-                        <p className='product-data-price product-data-real-price'>
-                            Deal of the Day :  <FormatPrice price={price} />
-                        </p>
+                        <div className='product-data-price'>
+                            <p>
+                                EUR:
+                                <del>
+                                    <FormatPrice price={price + 150000} />
+                                </del>
+                            </p>
+                        </div>
+                        <div className='product-data-price product-data-real-price'>
+                            <p >
+                                Deal of the Day :  <FormatPrice price={price} />
+                            </p>
+                        </div>
                         <p>{description}</p>
 
                         <div className='product-data-warranty'>
@@ -154,6 +158,6 @@ const Wrapper = styled.section`
             justify-content: center;
             align-items: center;
         }
-}
+    }
 `
 export default SimpleProduct

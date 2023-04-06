@@ -56,7 +56,7 @@ padding: 9rem 0;
   background: ${({ theme }) => theme.colors.bg};
   text-align: center;
   border-radius: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px 0px;
 }
 .services-2 {
   gap: 4rem;
@@ -70,7 +70,7 @@ padding: 9rem 0;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px 0px;
     div {
       display: flex;
       flex-direction: row;

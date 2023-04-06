@@ -23,7 +23,7 @@ const App = () => {
       black: "#212529",
       helper: "#84990ff",
 
-      bg: "#D9D9D6",
+      bg: "#F6F8FA",
       footer_bg: "#0a1435",
       btn: "rgb(98,84,243)",
       border: "rgba(98,84,243,0.5)",
@@ -41,19 +41,19 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <GlobalStyle />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/contacts' element={<Contact />} />
-          <Route path='/singleproduct/:id' element={<SingleProduct />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='*' element={<ErrorPage />} />
-        </Routes>
-      </Router>
+        <Router>
+          <GlobalStyle />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/contacts' element={<Contact />} />
+            <Route path='/singleproduct/:id' element={<SingleProduct />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='*' element={<ErrorPage />} />
+          </Routes>
+        </Router>
     </ThemeProvider>
   )
 }

@@ -88,6 +88,9 @@ const Wrapper = styled.section`
         max-width: 60vw;
         margin: auto;
         padding: 5rem 10rem;
+        border: 0.1rem solid;
+        //TODO : Visible contact form
+        /* overflow: visible; */
         background-color: ${({ theme }) => theme.colors.bg};
         border-radius: 1rem;
         box-shadow: ${({ theme }) => theme.colors.shadowSupport};
