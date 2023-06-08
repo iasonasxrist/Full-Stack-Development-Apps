@@ -4,10 +4,14 @@ import CartItem from './components/CartItem';
 import { NavLink } from 'react-router-dom';
 import { Button } from './styles/Button';
 import FormatPrice from './helper/formatPrice';
+import { useAuth0 } from '@auth0/auth0-react';
+
 
 const Cart = () => {
   const { cartItems, clearCart, shipping_fee, total_price } = useCartContext();
-  console.log("🚀 ~ file: Cart.js:8 ~ Cart ~ cart:", { ...cartItems })
+
+  const { isAuthenticated, user } = useAuth0();
+
 
   if (cartItems.length === 0) {
     return (
@@ -20,6 +24,13 @@ const Cart = () => {
   return (
     <Wrapper>
       <div className='container'>
+        {isAuthenticated && (
+          <div className='cart-user--profile'>
+            <img src={user.profile} alt={user.name} />
+            <h2 className='cart-user--name'>{user.name}
+            </h2>
+          </div>
+        )}
         <div className='cart-heading grid grid-five-column'>
           <p> Item</p>
           <p className='cart-hide'>Price</p>
